@@ -1,0 +1,1046 @@
+{"stats": [
+  {
+    "country": "Albania",
+    "men": 8,
+    "inEurope": true,
+    "women": 3
+  },
+  {
+    "country": "Andorra",
+    "men": 2,
+    "inEurope": true,
+    "women": 0
+  },
+  {
+    "country": "Belgium",
+    "men": 92,
+    "inEurope": true,
+    "women": 121
+  },
+  {
+    "country": "Bulgaria",
+    "men": 30,
+    "inEurope": true,
+    "women": 34
+  },
+  {
+    "country": "Denmark",
+    "men": 69,
+    "inEurope": true,
+    "women": 73
+  },
+  {
+    "country": "Germany",
+    "men": 1308,
+    "inEurope": true,
+    "women": 1410
+  },
+  {
+    "country": "Finland",
+    "men": 40,
+    "inEurope": true,
+    "women": 40
+  },
+  {
+    "country": "France",
+    "men": 2276,
+    "inEurope": true,
+    "women": 2568
+  },
+  {
+    "country": "Greece",
+    "men": 78,
+    "inEurope": true,
+    "women": 67
+  },
+  {
+    "country": "United Kingdom",
+    "men": 522,
+    "inEurope": true,
+    "women": 567
+  },
+  {
+    "country": "Ireland",
+    "men": 43,
+    "inEurope": true,
+    "women": 50
+  },
+  {
+    "country": "Iceland",
+    "men": 13,
+    "inEurope": true,
+    "women": 8
+  },
+  {
+    "country": "Italy",
+    "men": 691,
+    "inEurope": true,
+    "women": 778
+  },
+  {
+    "country": "Liechtenstein",
+    "men": 100,
+    "inEurope": true,
+    "women": 98
+  },
+  {
+    "country": "Luxembourg",
+    "men": 21,
+    "inEurope": true,
+    "women": 14
+  },
+  {
+    "country": "Malta",
+    "men": 21,
+    "inEurope": true,
+    "women": 15
+  },
+  {
+    "country": "Monaco",
+    "men": 19,
+    "inEurope": true,
+    "women": 28
+  },
+  {
+    "country": "Netherlands",
+    "men": 152,
+    "inEurope": true,
+    "women": 192
+  },
+  {
+    "country": "Norway",
+    "men": 49,
+    "inEurope": true,
+    "women": 50
+  },
+  {
+    "country": "Austria",
+    "men": 226,
+    "inEurope": true,
+    "women": 290
+  },
+  {
+    "country": "Poland",
+    "men": 40,
+    "inEurope": true,
+    "women": 35
+  },
+  {
+    "country": "Portugal",
+    "men": 429,
+    "inEurope": true,
+    "women": 513
+  },
+  {
+    "country": "Romania",
+    "men": 42,
+    "inEurope": true,
+    "women": 27
+  },
+  {
+    "country": "Sweden",
+    "men": 122,
+    "inEurope": true,
+    "women": 116
+  },
+  {
+    "country": "Spain",
+    "men": 594,
+    "inEurope": true,
+    "women": 629
+  },
+  {
+    "country": "Turkey",
+    "men": 279,
+    "inEurope": true,
+    "women": 260
+  },
+  {
+    "country": "Hungary",
+    "men": 95,
+    "inEurope": true,
+    "women": 82
+  },
+  {
+    "country": "Vatican City",
+    "men": 23,
+    "inEurope": false,
+    "women": 0
+  },
+  {
+    "country": "Cyprus",
+    "men": 12,
+    "inEurope": true,
+    "women": 8
+  },
+  {
+    "country": "Slovakia",
+    "men": 18,
+    "inEurope": true,
+    "women": 10
+  },
+  {
+    "country": "Czech Republic",
+    "men": 40,
+    "inEurope": true,
+    "women": 36
+  },
+  {
+    "country": "Serbia",
+    "men": 258,
+    "inEurope": true,
+    "women": 253
+  },
+  {
+    "country": "Croatia",
+    "men": 94,
+    "inEurope": true,
+    "women": 99
+  },
+  {
+    "country": "Slovenia",
+    "men": 22,
+    "inEurope": true,
+    "women": 19
+  },
+  {
+    "country": "Bosnia and Herzegovina",
+    "men": 114,
+    "inEurope": true,
+    "women": 125
+  },
+  {
+    "country": "Montenegro",
+    "men": 18,
+    "inEurope": true,
+    "women": 11
+  },
+  {
+    "country": "North Macedonia",
+    "men": 47,
+    "inEurope": false,
+    "women": 41
+  },
+  {
+    "country": "Kosovo",
+    "men": 73,
+    "inEurope": false,
+    "women": 67
+  },
+  {
+    "country": "Estonia",
+    "men": 12,
+    "inEurope": true,
+    "women": 7
+  },
+  {
+    "country": "Latvia",
+    "men": 5,
+    "inEurope": true,
+    "women": 1
+  },
+  {
+    "country": "Lithuania",
+    "men": 6,
+    "inEurope": true,
+    "women": 2
+  },
+  {
+    "country": "Moldova",
+    "men": 9,
+    "inEurope": false,
+    "women": 9
+  },
+  {
+    "country": "Russia",
+    "men": 60,
+    "inEurope": true,
+    "women": 50
+  },
+  {
+    "country": "Ukraine",
+    "men": 20,
+    "inEurope": true,
+    "women": 11
+  },
+  {
+    "country": "Belarus",
+    "men": 1,
+    "inEurope": true,
+    "women": 0
+  },
+  {
+    "country": "Ethiopia",
+    "men": 21,
+    "inEurope": false,
+    "women": 14
+  },
+  {
+    "country": "Djibouti",
+    "men": 2,
+    "inEurope": false,
+    "women": 3
+  },
+  {
+    "country": "Algeria",
+    "men": 28,
+    "inEurope": false,
+    "women": 20
+  },
+  {
+    "country": "Angola",
+    "men": 4,
+    "inEurope": false,
+    "women": 4
+  },
+  {
+    "country": "Burundi",
+    "men": 6,
+    "inEurope": false,
+    "women": 6
+  },
+  {
+    "country": "Benin",
+    "men": 4,
+    "inEurope": false,
+    "women": 3
+  },
+  {
+    "country": "Ivory Coast",
+    "men": 10,
+    "inEurope": false,
+    "women": 14
+  },
+  {
+    "country": "Gabon",
+    "men": 0,
+    "inEurope": false,
+    "women": 1
+  },
+  {
+    "country": "The Gambia",
+    "men": 5,
+    "inEurope": false,
+    "women": 2
+  },
+  {
+    "country": "Ghana",
+    "men": 26,
+    "inEurope": false,
+    "women": 28
+  },
+  {
+    "country": "Guinea",
+    "men": 1,
+    "inEurope": false,
+    "women": 3
+  },
+  {
+    "country": "Cameroon",
+    "men": 17,
+    "inEurope": false,
+    "women": 16
+  },
+  {
+    "country": "Cape Verde",
+    "men": 10,
+    "inEurope": false,
+    "women": 9
+  },
+  {
+    "country": "Kenya",
+    "men": 57,
+    "inEurope": false,
+    "women": 39
+  },
+  {
+    "country": "Comoros",
+    "men": 0,
+    "inEurope": false,
+    "women": 1
+  },
+  {
+    "country": "Republic of the Congo",
+    "men": 16,
+    "inEurope": false,
+    "women": 15
+  },
+  {
+    "country": "Liberia",
+    "men": 9,
+    "inEurope": false,
+    "women": 2
+  },
+  {
+    "country": "Libya",
+    "men": 7,
+    "inEurope": false,
+    "women": 7
+  },
+  {
+    "country": "Madagascar",
+    "men": 13,
+    "inEurope": false,
+    "women": 11
+  },
+  {
+    "country": "Malawi",
+    "men": 2,
+    "inEurope": false,
+    "women": 3
+  },
+  {
+    "country": "Mali",
+    "men": 5,
+    "inEurope": false,
+    "women": 7
+  },
+  {
+    "country": "Morocco",
+    "men": 69,
+    "inEurope": false,
+    "women": 81
+  },
+  {
+    "country": "Mauritania",
+    "men": 1,
+    "inEurope": false,
+    "women": 3
+  },
+  {
+    "country": "Mauritius",
+    "men": 19,
+    "inEurope": false,
+    "women": 15
+  },
+  {
+    "country": "Mozambique",
+    "men": 8,
+    "inEurope": false,
+    "women": 8
+  },
+  {
+    "country": "Niger",
+    "men": 5,
+    "inEurope": false,
+    "women": 4
+  },
+  {
+    "country": "Nigeria",
+    "men": 19,
+    "inEurope": false,
+    "women": 9
+  },
+  {
+    "country": "Burkina Faso",
+    "men": 3,
+    "inEurope": false,
+    "women": 2
+  },
+  {
+    "country": "Zimbabwe",
+    "men": 4,
+    "inEurope": false,
+    "women": 4
+  },
+  {
+    "country": "Rwanda",
+    "men": 6,
+    "inEurope": false,
+    "women": 7
+  },
+  {
+    "country": "Zambia",
+    "men": 8,
+    "inEurope": false,
+    "women": 8
+  },
+  {
+    "country": "Senegal",
+    "men": 24,
+    "inEurope": false,
+    "women": 32
+  },
+  {
+    "country": "Seychelles",
+    "men": 5,
+    "inEurope": false,
+    "women": 5
+  },
+  {
+    "country": "Sierra Leone",
+    "men": 3,
+    "inEurope": false,
+    "women": 1
+  },
+  {
+    "country": "Somalia",
+    "men": 6,
+    "inEurope": false,
+    "women": 9
+  },
+  {
+    "country": "South Africa",
+    "men": 59,
+    "inEurope": false,
+    "women": 59
+  },
+  {
+    "country": "Sudan",
+    "men": 5,
+    "inEurope": false,
+    "women": 4
+  },
+  {
+    "country": "Namibia",
+    "men": 1,
+    "inEurope": false,
+    "women": 6
+  },
+  {
+    "country": "Eswatini",
+    "men": 1,
+    "inEurope": false,
+    "women": 0
+  },
+  {
+    "country": "Tanzania",
+    "men": 29,
+    "inEurope": false,
+    "women": 25
+  },
+  {
+    "country": "Togo",
+    "men": 10,
+    "inEurope": false,
+    "women": 10
+  },
+  {
+    "country": "Chad",
+    "men": 1,
+    "inEurope": false,
+    "women": 3
+  },
+  {
+    "country": "Tunisia",
+    "men": 74,
+    "inEurope": false,
+    "women": 68
+  },
+  {
+    "country": "Uganda",
+    "men": 10,
+    "inEurope": false,
+    "women": 8
+  },
+  {
+    "country": "Egypt",
+    "men": 62,
+    "inEurope": false,
+    "women": 74
+  },
+  {
+    "country": "Central African Republic",
+    "men": 2,
+    "inEurope": false,
+    "women": 3
+  },
+  {
+    "country": "Eritrea",
+    "men": 1,
+    "inEurope": false,
+    "women": 1
+  },
+  {
+    "country": "South Sudan",
+    "men": 5,
+    "inEurope": false,
+    "women": 2
+  },
+  {
+    "country": "Argentina",
+    "men": 63,
+    "inEurope": false,
+    "women": 60
+  },
+  {
+    "country": "The Bahamas",
+    "men": 14,
+    "inEurope": false,
+    "women": 6
+  },
+  {
+    "country": "Barbados",
+    "men": 1,
+    "inEurope": false,
+    "women": 1
+  },
+  {
+    "country": "Bolivia",
+    "men": 24,
+    "inEurope": false,
+    "women": 16
+  },
+  {
+    "country": "Brazil",
+    "men": 265,
+    "inEurope": false,
+    "women": 239
+  },
+  {
+    "country": "Chile",
+    "men": 50,
+    "inEurope": false,
+    "women": 36
+  },
+  {
+    "country": "Costa Rica",
+    "men": 66,
+    "inEurope": false,
+    "women": 73
+  },
+  {
+    "country": "Dominican Republic",
+    "men": 117,
+    "inEurope": false,
+    "women": 129
+  },
+  {
+    "country": "Ecuador",
+    "men": 37,
+    "inEurope": false,
+    "women": 30
+  },
+  {
+    "country": "El Salvador",
+    "men": 7,
+    "inEurope": false,
+    "women": 6
+  },
+  {
+    "country": "Guatemala",
+    "men": 15,
+    "inEurope": false,
+    "women": 17
+  },
+  {
+    "country": "Haiti",
+    "men": 3,
+    "inEurope": false,
+    "women": 2
+  },
+  {
+    "country": "Belize",
+    "men": 2,
+    "inEurope": false,
+    "women": 5
+  },
+  {
+    "country": "Honduras",
+    "men": 6,
+    "inEurope": false,
+    "women": 4
+  },
+  {
+    "country": "Jamaica",
+    "men": 2,
+    "inEurope": false,
+    "women": 3
+  },
+  {
+    "country": "Canada",
+    "men": 326,
+    "inEurope": false,
+    "women": 244
+  },
+  {
+    "country": "Colombia",
+    "men": 89,
+    "inEurope": false,
+    "women": 81
+  },
+  {
+    "country": "Cuba",
+    "men": 12,
+    "inEurope": false,
+    "women": 14
+  },
+  {
+    "country": "Mexico",
+    "men": 132,
+    "inEurope": false,
+    "women": 96
+  },
+  {
+    "country": "Nicaragua",
+    "men": 14,
+    "inEurope": false,
+    "women": 6
+  },
+  {
+    "country": "Panama",
+    "men": 37,
+    "inEurope": false,
+    "women": 20
+  },
+  {
+    "country": "Paraguay",
+    "men": 39,
+    "inEurope": false,
+    "women": 44
+  },
+  {
+    "country": "Peru",
+    "men": 40,
+    "inEurope": false,
+    "women": 49
+  },
+  {
+    "country": "Trinidad and Tobago",
+    "men": 2,
+    "inEurope": false,
+    "women": 0
+  },
+  {
+    "country": "Uruguay",
+    "men": 11,
+    "inEurope": false,
+    "women": 10
+  },
+  {
+    "country": "Venezuela",
+    "men": 9,
+    "inEurope": false,
+    "women": 10
+  },
+  {
+    "country": "United States of America",
+    "men": 710,
+    "inEurope": false,
+    "women": 704
+  },
+  {
+    "country": "Dominica",
+    "men": 1,
+    "inEurope": false,
+    "women": 3
+  },
+  {
+    "country": "Grenada",
+    "men": 0,
+    "inEurope": false,
+    "women": 5
+  },
+  {
+    "country": "Antigua and Barbuda",
+    "men": 1,
+    "inEurope": false,
+    "women": 1
+  },
+  {
+    "country": "Saint Vincent and the Grenadines",
+    "men": 1,
+    "inEurope": false,
+    "women": 0
+  },
+  {
+    "country": "Saint Kitts and Nevis",
+    "men": 2,
+    "inEurope": false,
+    "women": 1
+  },
+  {
+    "country": "Bahrain",
+    "men": 1,
+    "inEurope": false,
+    "women": 0
+  },
+  {
+    "country": "Bhutan",
+    "men": 1,
+    "inEurope": false,
+    "women": 0
+  },
+  {
+    "country": "Myanmar",
+    "men": 1,
+    "inEurope": false,
+    "women": 4
+  },
+  {
+    "country": "Sri Lanka",
+    "men": 37,
+    "inEurope": false,
+    "women": 38
+  },
+  {
+    "country": "Taiwan",
+    "men": 16,
+    "inEurope": false,
+    "women": 7
+  },
+  {
+    "country": "People's Republic of China",
+    "men": 81,
+    "inEurope": false,
+    "women": 54
+  },
+  {
+    "country": "India",
+    "men": 34,
+    "inEurope": false,
+    "women": 33
+  },
+  {
+    "country": "Indonesia",
+    "men": 48,
+    "inEurope": false,
+    "women": 38
+  },
+  {
+    "country": "Iraq",
+    "men": 24,
+    "inEurope": false,
+    "women": 16
+  },
+  {
+    "country": "Iran",
+    "men": 12,
+    "inEurope": false,
+    "women": 4
+  },
+  {
+    "country": "Israel",
+    "men": 118,
+    "inEurope": true,
+    "women": 127
+  },
+  {
+    "country": "Japan",
+    "men": 57,
+    "inEurope": false,
+    "women": 33
+  },
+  {
+    "country": "Yemen",
+    "men": 2,
+    "inEurope": false,
+    "women": 2
+  },
+  {
+    "country": "Jordan",
+    "men": 8,
+    "inEurope": false,
+    "women": 14
+  },
+  {
+    "country": "Cambodia",
+    "men": 18,
+    "inEurope": false,
+    "women": 12
+  },
+  {
+    "country": "Qatar",
+    "men": 17,
+    "inEurope": false,
+    "women": 20
+  },
+  {
+    "country": "Kuwait",
+    "men": 3,
+    "inEurope": false,
+    "women": 0
+  },
+  {
+    "country": "Laos",
+    "men": 6,
+    "inEurope": false,
+    "women": 2
+  },
+  {
+    "country": "Lebanon",
+    "men": 26,
+    "inEurope": false,
+    "women": 27
+  },
+  {
+    "country": "Malaysia",
+    "men": 15,
+    "inEurope": false,
+    "women": 13
+  },
+  {
+    "country": "Maldives",
+    "men": 6,
+    "inEurope": false,
+    "women": 5
+  },
+  {
+    "country": "Oman",
+    "men": 4,
+    "inEurope": false,
+    "women": 6
+  },
+  {
+    "country": "Mongolia",
+    "men": 1,
+    "inEurope": false,
+    "women": 1
+  },
+  {
+    "country": "Nepal",
+    "men": 10,
+    "inEurope": false,
+    "women": 5
+  },
+  {
+    "country": "North Korea",
+    "men": 1,
+    "inEurope": false,
+    "women": 0
+  },
+  {
+    "country": "United Arab Emirates",
+    "men": 213,
+    "inEurope": false,
+    "women": 140
+  },
+  {
+    "country": "Pakistan",
+    "men": 37,
+    "inEurope": false,
+    "women": 15
+  },
+  {
+    "country": "Philippines",
+    "men": 97,
+    "inEurope": false,
+    "women": 89
+  },
+  {
+    "country": "Saudi Arabia",
+    "men": 14,
+    "inEurope": false,
+    "women": 10
+  },
+  {
+    "country": "Singapore",
+    "men": 86,
+    "inEurope": false,
+    "women": 68
+  },
+  {
+    "country": "South Korea",
+    "men": 19,
+    "inEurope": false,
+    "women": 13
+  },
+  {
+    "country": "Syria",
+    "men": 2,
+    "inEurope": false,
+    "women": 0
+  },
+  {
+    "country": "Thailand",
+    "men": 466,
+    "inEurope": false,
+    "women": 208
+  },
+  {
+    "country": "Vietnam",
+    "men": 20,
+    "inEurope": false,
+    "women": 15
+  },
+  {
+    "country": "Bangladesh",
+    "men": 16,
+    "inEurope": false,
+    "women": 17
+  },
+  {
+    "country": "Palestine",
+    "men": 4,
+    "inEurope": false,
+    "women": 3
+  },
+  {
+    "country": "Armenia",
+    "men": 3,
+    "inEurope": true,
+    "women": 3
+  },
+  {
+    "country": "Azerbaijan",
+    "men": 2,
+    "inEurope": true,
+    "women": 2
+  },
+  {
+    "country": "Georgia",
+    "men": 15,
+    "inEurope": true,
+    "women": 8
+  },
+  {
+    "country": "Kazakhstan",
+    "men": 4,
+    "inEurope": false,
+    "women": 5
+  },
+  {
+    "country": "Kyrgyzstan",
+    "men": 13,
+    "inEurope": false,
+    "women": 9
+  },
+  {
+    "country": "Tajikistan",
+    "men": 3,
+    "inEurope": false,
+    "women": 3
+  },
+  {
+    "country": "Uzbekistan",
+    "men": 1,
+    "inEurope": false,
+    "women": 2
+  },
+  {
+    "country": "Australia",
+    "men": 147,
+    "inEurope": false,
+    "women": 151
+  },
+  {
+    "country": "Fiji",
+    "men": 0,
+    "inEurope": false,
+    "women": 1
+  },
+  {
+    "country": "Vanuatu",
+    "men": 1,
+    "inEurope": false,
+    "women": 0
+  },
+  {
+    "country": "New Zealand",
+    "men": 48,
+    "inEurope": false,
+    "women": 67
+  },
+  {
+    "country": "Papua New Guinea",
+    "men": 19,
+    "inEurope": false,
+    "women": 12
+  },
+  {
+    "country": "Solomon Islands",
+    "men": 0,
+    "inEurope": false,
+    "women": 1
+  }
+]}
