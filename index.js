@@ -288,7 +288,6 @@ export const loadData = () => {
     jsoStatistics.totalPointsWomen = totalPointsWomen;
     jsoStatistics.totalPointsMenInEurope = totalPointsMenInEurope;
     jsoStatistics.totalPointsWomenInEurope = totalPointsWomenInEurope;
-    allLoaded = true;
   };
 
 
