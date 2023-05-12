@@ -1,13 +1,8 @@
-import * as d3 from './node_modules/d3/dist/d3.js';
-import scrollama from './scrollama.js';
-
 const SVG_MONDE = d3.select(".carteMonde");
 const SVG_GRAPH = d3.select(".graph");
 
 const WIDTH = 1400;
 const HEIGHT = 800;
-
-let i = 0;
 
 const CENTRE_MONDE = [8.23, 46.82]; // Centré sur la Suisse
 
@@ -19,12 +14,8 @@ const DIVISEUR = 5;  // Pour ne pas avoir trop de points !
 const mapPAYS = new Map(); // Map pour retrouver un pays plus rapidement
 const mapCHIFFRES = new Map(); // Map pour retrouver un chiffre plus rapidement
 
-export const ptsSUISSES = [];
+const ptsSUISSES = [];
 const TOOLTIP = d3.select('.info');  // Selectionne-le une-fois pour toute.
-
-import chiffres from './chiffres.json';
-import stats from './stats.json';
-import monde from './world.json';
 
 /*
 * Pour les transitions :
@@ -47,157 +38,22 @@ let jsoWorld = {};
 let jsoStatistics = {};
 
 /**
- * Mélange un tableau
- * @param {*} array Le tableu à mélanger
- * @returns 
- */
-function shuffle(array) {
-  let currentIndex = array.length, randomIndex;
-
-  while (currentIndex != 0) {
-
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex--;
-
-      [array[currentIndex], array[randomIndex]] = [
-          array[randomIndex], array[currentIndex]];
-  }
-
-  return array;
-}
-
-
-/**
-* Retourne un tableu de points (x,y) aléatoires tous dans un polygone
-* @param {*} polygon Le polygone contenant tous les points
-* @param {*} nbPoints Le nombre de points
-* @returns 
-*/
-function getPointInside(polygon, nbPoints) {
-  var bench = getBench(polygon);
-  var deltaX = bench[2] - bench[0];
-  var deltaY = bench[3] - bench[1];
-
-  var tabPoints = [];
-  for (var i = 0; i < nbPoints; i++) {
-      var pX;
-      var pY;
-      do {
-          pX = Math.random() * deltaX + bench[0];
-          pY = Math.random() * deltaY + bench[1];
-
-          // on remplace polygonContains par d3.polygonContains
-      } while (!d3.polygonContains(polygon, [pX, pY]));
-      /*
-      * Transforme un point [x,y] en object pour pouvois stocker des info (eg, sex)
-      */
-      var unPoint = {}
-      unPoint.coordonnee = [pX, pY];
-      tabPoints.push(unPoint);
-  }
-
-  return tabPoints;
-}
-
-
-/**
-* Retourne le plus petit rectange possible autour d'un polygone.
-* Necessaire pour getPointInside()
-* @param {*} polygon 
-* @returns 
-*/
-function getBench(polygon) {
-  var minX = polygon[0][0];
-  var minY = polygon[0][1];
-  var maxX = polygon[0][0];
-  var maxY = polygon[0][1];
-
-  var length = polygon.length;
-
-  for (var i = 1; i < length; i++) {
-      if (polygon[i][0] < minX) {
-          minX = polygon[i][0];
-      } else if (polygon[i][0] > maxX) {
-          maxX = polygon[i][0];
-      }
-      if (polygon[i][1] < minY) {
-          minY = polygon[i][1];
-      } else if (polygon[i][1] > maxY) {
-          maxY = polygon[i][1];
-      }
-  }
-
-  return [minX, minY, maxX, maxY];
-}
-
-/* ********************************************************
-*                       Zoom
-***********************************************************/
-
-const zoom = d3.zoom()
-  .on('zoom', handleZoom);
-
-
-
-function handleZoom(e) {
-  SVG_MONDE
-      .attr('transform', e.transform);
-}
-
-
-const ZOOM_FACTOR_SUISSE = 1;
-const ZOOM_FACTOR_EUROPE = 0.05;
-const ZOOM_FACTOR_MONDE = 0.013;
-const ZOOM_FACTOR_GRAPH = 1.5;
-
-let zoomFactor = 1;
-
-/**
-* Zoom et bouge vers un point donné
-* @param {*} versPoint 
-* @param {*} factor 
-*/
-function doMoveAndZoom(versPoint, factor) {
-
-  zoomFactor = factor;
-
-  let xMAZ = versPoint[0] * factor;
-  let yMAZ = versPoint[1] * factor;
-
-  var t = d3.zoomIdentity.translate(-xMAZ + WIDTH / 2, -yMAZ + HEIGHT / 2).scale(factor);
-
-  SVG_MONDE
-      .transition()
-      .duration(3000)
-      .call(zoom.transform, t);
-}
-
-/**
-* Zoom, Si le facteur est identique au précédent, ne fait rien
-* @param {*} factor 
-*/
-function doZoom(factor) {
-  if (zoomFactor != factor) {
-
-      zoomFactor = factor;
-
-      SVG_MONDE
-          .transition()
-          .duration(3000)
-          .call(zoom.scaleTo, factor)
-  }
-
-}
-
-/**
 * Chargement + préparations données :
 *    - Pour les chiffres, re-calcul de la taille et position
 *    - Pour les stats, calcul des données dont nous aurons besoins (nombre de points Europe, Monde, ...)
 *    - Pour le monde, créer une Map() pour pouvoir retrouver un pays plus rapidement.
 */
+let allLoaded = false;
 
-export const loadData = () => {
-  
+const loadData = new Promise(function (resolve, reject) {
+  if (allLoaded) {
+    resolve();
+  }
+  Promise.all([
+    d3.json("chiffres.json"),
+    d3.json("world.json"),
+    d3.json("stats.json"),
+  ]).then(function ([chiffres, monde, stats]) {
 
     chiffres.features.forEach((element) => {
       let newPolygon = [];
@@ -290,7 +146,10 @@ export const loadData = () => {
     jsoStatistics.totalPointsWomen = totalPointsWomen;
     jsoStatistics.totalPointsMenInEurope = totalPointsMenInEurope;
     jsoStatistics.totalPointsWomenInEurope = totalPointsWomenInEurope;
-  };
+    allLoaded = true;
+    resolve();
+  });
+});
 
 
 /**
@@ -826,121 +685,9 @@ function afficheGraph() {
 }
 
 
-const scrolly = d3.select("#scrolly");
-const figure = scrolly.select("figure");
-const article = scrolly.select("article");
-const step = article.selectAll(".step");
-
-const scroller = scrollama();
-
-function handleResize() {
-    const stepH = Math.floor(window.innerHeight * 0.70);
-    step.style("height", stepH + "px");
-
-    const figureHeight = window.innerHeight - 50;
-    const figureMarginTop = 25;
-
-    figure.style("height", figureHeight + "px")
-        .style("top", figureMarginTop + "px");
-
-    scroller.resize();
-}
 
 
-function init() {
-    loadData();
-    handleResize();
-        scroller
-            .setup({
-                step: "#scrolly article .step",
-                offset: 0.33,
-                debug: false
-            })
-            .onStepEnter(handleStepEnter);
-    dernier = -1;
-}
-init();
 
 
-/* **************************************************************************
-*                          TRANSITIONS
-* ***************************************************************************/
-
-var dernier = -1;
-var pointsFinaux = [];
-function handleStepEnter(response) {
-    if (response.index == dernier) {
-        return;
-    } else {
-        dernier = response.index;
-    }
-    console.log(response);
-
-    step.classed("is-active", function (d, i) {
-        return i === response.index;
-    });
-
-    if (ptsSUISSES == null ) {
-        response.index = 0;
-    }
-
-    switch (response.index) {
-        case 0:
-            
-            doZoom(ZOOM_FACTOR_SUISSE);
-            AfficheMonde();
-
-            if (ptsSUISSES.length == 0) {
-                creeLesSuisses();
-            } else if (response.direction == "up") {
-                retourDesSuisses(TYPE_EUROPE);
-                retourDesSuisses(TYPE_MONDE);
-            }
 
 
-            break;
-        case 1:
-
-            doZoom(ZOOM_FACTOR_EUROPE)
-            if (response.direction == "up") {
-                retourDesSuisses(TYPE_MONDE);
-            } else {
-                emigreSuisses(TYPE_EUROPE);
-            }
-
-            break;
-        case 2:
-
-            if (response.direction == "up") {
-                effaceGraph();
-                emigreSuisses(TYPE_EUROPE);
-            }
-            emigreSuisses(TYPE_MONDE);
-            doZoom(ZOOM_FACTOR_MONDE);
-            break;
-        case 3:
-            if (response.direction == "up") {
-                enleveSalutations();
-            }
-            doZoom(ZOOM_FACTOR_GRAPH);
-            afficheGraph();
-            break;
-        case 4:
-            if (response.direction == "up") {
-                doMoveAndZoom(projection(CENTRE_MONDE), ZOOM_FACTOR_MONDE);
-            } else {
-                effaceGraph();
-                doZoom(ZOOM_FACTOR_MONDE);
-                pointsFinaux = montreChiffre("27");
-            }
-            break;
-        case 5:
-            doMoveAndZoom(pointsFinaux[0], ZOOM_FACTOR_SUISSE);
-            break;
-        case 6:
-            doMoveAndZoom(pointsFinaux[1], ZOOM_FACTOR_SUISSE);
-            break;
-    }
-
-
-}
