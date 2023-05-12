@@ -161,10 +161,10 @@ function doMoveAndZoom(versPoint, factor) {
 
   zoomFactor = factor;
 
-  let x = versPoint[0] * factor;
-  let y = versPoint[1] * factor;
+  let xMAZ = versPoint[0] * factor;
+  let yMAZ = versPoint[1] * factor;
 
-  var t = d3.zoomIdentity.translate(-x + WIDTH / 2, -y + HEIGHT / 2).scale(factor);
+  var t = d3.zoomIdentity.translate(-xMAZ + WIDTH / 2, -yMAZ + HEIGHT / 2).scale(factor);
 
   SVG_MONDE
       .transition()
