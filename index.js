@@ -8,8 +8,6 @@ const WIDTH = 1400;
 const HEIGHT = 800;
 
 let i = 0;
-let x = 0;
-let y = 0;
 
 const CENTRE_MONDE = [8.23, 46.82]; // Centré sur la Suisse
 
@@ -163,8 +161,8 @@ function doMoveAndZoom(versPoint, factor) {
 
   zoomFactor = factor;
 
-  x = versPoint[0] * factor;
-  y = versPoint[1] * factor;
+  let x = versPoint[0] * factor;
+  let y = versPoint[1] * factor;
 
   var t = d3.zoomIdentity.translate(-x + WIDTH / 2, -y + HEIGHT / 2).scale(factor);
 
