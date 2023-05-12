@@ -7,6 +7,8 @@ const SVG_GRAPH = d3.select(".graph");
 const WIDTH = 1400;
 const HEIGHT = 800;
 
+let i = 0;
+
 const CENTRE_MONDE = [8.23, 46.82]; // Centré sur la Suisse
 
 const TYPE_EUROPE = "lesSuisses_Europe";
