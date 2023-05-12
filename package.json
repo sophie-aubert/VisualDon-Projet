@@ -1,0 +1,29 @@
+{
+  "name": "projet",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "lite": "lite-server --port 10001",
+    "start": "npm run lite"
+  },
+  "devDependencies": {
+    "lite-server": "^1.3.1"
+  },
+  "dependencies": {
+    "d3-array": "^3.2.3",
+    "d3-drag": "^3.0.0",
+    "d3-fetch": "^3.0.1",
+    "d3-geo": "^3.1.0",
+    "d3-geo-projection": "^4.0.0",
+    "d3-polygon": "^3.0.1",
+    "d3-scale": "^4.0.2",
+    "d3-selection": "^3.0.0",
+    "d3-zoom": "^3.0.0"
+  },
+  "main": "soph.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
